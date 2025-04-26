@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: odoo17
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://odoo_devlop_user:2phQP6awsL4kLRpS8oLjqERTZHdaflow@dpg-d06f26juibrs73ehbhn0-a.internal:5432/odoo_devlop
+    ports:
+      - 8069
