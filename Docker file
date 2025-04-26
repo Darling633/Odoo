@@ -1,0 +1,6 @@
+FROM odoo:17
+
+# Set your database URL as environment variable
+ENV DATABASE_URL=postgresql://odoo_devlop_user:2phQP6awsL4kLRpS8oLjqERTZHdaflow@dpg-d06f26juibrs73ehbhn0-a.internal:5432/odoo_devlop
+
+EXPOSE 8069
